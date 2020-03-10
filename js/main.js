@@ -89,8 +89,8 @@ function createSequenceControls(map, attributes){
 		onAdd: function(map) {
 			var container = L.DomUtil.create('div', 'sequence-control-container');
 			$(container).append('<input class = "range-slider" type = "range">');
-			$(container).append('<button class="skip" id="reverse">Reverse</button>');
-			$(container).append('<button class="skip" id="forward">Skip</button>');
+			$(container).append('<button class="forward" id="reverse">reverse</button>');
+			$(container).append('<button class="forward" id="forward">forward</button>');
 			L.DomEvent.disableClickPropagation(container);
 			return container;
 		}
@@ -105,7 +105,7 @@ function createSequenceControls(map, attributes){
 		step: 1
 	});
 	//create sequence buttons
-	$('.skip').click(function(){
+	$('.forward').click(function(){
 		var index = $('.range-slider').val();
 		if($(this).attr('id') == 'forward'){
 			index++;
@@ -186,13 +186,13 @@ function getData(map){
 function createLegend(map, attributes, attribute, properties){
 	var LegendControl = L.Control.extend({
 		options: {
-			position: 'bottomleft'
+			position: 'bottomright'
 		},
 		onAdd: function (map) {
 			var container = L.DomUtil.create('div', 'legend-control-container');
 
 			$(container).append('<div id="temporal-legend">')
-			var svg = '<svg id="attribute-legend" width="160px" height="60px">';
+			var svg = '<svg id="attribute-legend" width="200px" height="260px">';
 
 			var circles = {
 				max: 10,
@@ -202,8 +202,8 @@ function createLegend(map, attributes, attribute, properties){
 
 			//Create dynamic legend
 			for(var circle in circles){
-				svg += '<circle class="legend-circle" id="' + circle + '"fill="#ffffff" fill-opacity="1.0" stroke="#A4123F" cx="30"/>';
-				svg += '<text id="' + circle + '-text" x="65" y="' + circles[circle] + '"></text>';
+				svg += '<circle class="legend-circle" id="' + circle + '"fill="red" fill-opacity="0.3" cx="50"/>';
+				svg += '<text id="' + circle + '-text" x="95" y="' + circles[circle] + '"></text>';
 				//svg += '<text id="' + circles[i] + '-text" x="65" y="60"></text>';
 			};
 
@@ -223,8 +223,8 @@ function createLegend(map, attributes, attribute, properties){
 
 // Calculate circle values for legend
 function getCircleValues(map, attribute){
-	var min = 1000,
-		max = -1000;
+	var min = 500,
+		max = -500;
 
 	map.eachLayer(function(layer){
 		if (layer.feature){
@@ -251,7 +251,7 @@ function newLegendupdate(map, attribute){
 	var year = attribute.split("_")[1];
 	var content = "Population" + attribute;
 
-
+// creating temportal legend for citypop
 	$('#temporal-legend').html(content);
 
 	var circleValues = getCircleValues(map, attribute);
@@ -259,7 +259,7 @@ function newLegendupdate(map, attribute){
 			var radius = calcPropRadius(circleValues[key]);
 
 			$('#'+key).attr({
-				cy: 50 - radius,
+				cy: 60 - radius,
 				r: radius
 			});
 

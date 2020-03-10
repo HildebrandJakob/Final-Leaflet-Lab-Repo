@@ -21,14 +21,10 @@
 	 font-style: bold;
  }
 
- .leaflet-popup-content p {
-	 margin 0.2em 0;
-	 line-height: 0.75;
-	 font-family: olifantnormal, sans-serif;
- }
+
 
  .range-slider {
-	 width: 60%;
+	 width: 50%;
  }
 
 #forward {
@@ -42,7 +38,7 @@
 .sequence-control-container {
     width: 325px;
     height: 25px;
-    background-color: rgba(255,255,255,0.8);
+    background-color:black;
     padding: 10px;
     line-height: 45px;
     text-align: center;
@@ -52,7 +48,7 @@
 .legend-control-container {
 	font-family: olifantnormal, serif;
 	text-align: center;
-	font-size:12px;
+	font-size:10px;
 	width: 180px;
 	height: 90px;
 	background-color: rgba(255,255,255,0.8);
