@@ -299,13 +299,8 @@ function createOverlay(map){
 		"Important Landmarks": importantLandmarks
 	};
 
-	L.control.layers(overlays).addTo(map);
+	L.control.layers({},overlays).addTo(map);
 
-					if(control.layers.collapsed) {
-				importantLandmarks.expand();
-				} else {
-				importantLandmarks.collapse();
-				}
 };
 
 
