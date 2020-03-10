@@ -1,0 +1,365 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.9065,
+          43.0389
+        ]
+      },
+      "properties": {
+        "name": "Milwaukee",
+        "City": "Milwaukee",
+        "Pop_1950": 637.392,
+        "Pop_1960": 741.324,
+        "Pop_1970": 717.099,
+        "Pop_1980": 636.212,
+        "Pop_1990": 628.088,
+        "Pop_2000": 596.974,
+        "Pop_2010": 594.833,
+        "latitude": 43.0389,
+        "longitude": 87.9065,
+        "desc": "US"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.6301,
+          44.9591
+        ]
+      },
+      "properties": {
+        "name": "Wausau",
+        "City": "Wausau",
+        "Pop_1950": 30.386,
+        "Pop_1960": 31.943,
+        "Pop_1970": 32.806,
+        "Pop_1980": 32.426,
+        "Pop_1990": 37.060,
+        "Pop_2000": 38.426,
+        "Pop_2010": 39.114,
+        "latitude": 44.9591,
+        "longitude": -89.6301,
+        "desc": "US"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.0318,
+          42.5083
+        ]
+      },
+      "properties": {
+        "name": "Beloit",
+        "City": "Beloit",
+        "Pop_1950": 29.590,
+        "Pop_1960": 32.846,
+        "Pop_1970": 35.729,
+        "Pop_1980": 35.207,
+        "Pop_1990": 35.573,
+        "Pop_2000": 35.775,
+        "Pop_2010": 36.996,
+        "latitude": 42.5083,
+        "longitude": -89.0318,
+        "desc": "US"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.0187,
+          42.6828
+        ]
+      },
+      "properties": {
+        "name": "Janesville",
+        "City": "Janesville",
+        "Pop_1950": 24.899,
+        "Pop_1960": 35.164,
+        "Pop_1970": 46.426,
+        "Pop_1980": 51.071,
+        "Pop_1990": 52.133,
+        "Pop_2000": 59.498,
+        "Pop_2010": 63.575,
+        "latitude": 42.6828,
+        "longitude": -89.0187,
+        "desc": "US"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.8212,
+          42.5847
+        ]
+      },
+      "properties": {
+        "name": "Kenosha",
+        "City": "Kenosha",
+        "Pop_1950": 54.368,
+        "Pop_1960": 67.899,
+        "Pop_1970": 78.805,
+        "Pop_1980": 77.352,
+        "Pop_1990": 80.352,
+        "Pop_2000": 90.352,
+        "Pop_2010": 99.218,
+        "latitude": 42.5847,
+        "longitude": -87.8212,
+        "desc": "US"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.7829,
+          42.7261
+        ]
+      },
+      "properties": {
+        "name": "Racine",
+        "City": "Racine",
+        "Pop_1950": 71.193,
+        "Pop_1960": 89.114,
+        "Pop_1970": 95.162,
+        "Pop_1980": 85.725,
+        "Pop_1990": 84.298,
+        "Pop_2000": 81.855,
+        "Pop_2010": 78.860,
+        "latitude": 42.7261,
+        "longitude": -87.7829,
+        "desc": "US"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.4012,
+          43.0731
+        ]
+      },
+      "properties": {
+        "name": "Madison",
+        "City": "Madison",
+        "Pop_1950": 96.056,
+        "Pop_1960": 126.706,
+        "Pop_1970": 171.809,
+        "Pop_1980": 170.016,
+        "Pop_1990": 191.262,
+        "Pop_2000": 208.054,
+        "Pop_2010": 233.2019,
+        "latitude": 43.0731,
+        "longitude": -89.4012,
+        "desc": "US"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.0133,
+          44.5133
+        ]
+      },
+      "properties": {
+        "name": "Green Bay",
+        "City": "Green Bay",
+        "Pop_1950": 52.735,
+        "Pop_1960": 62.952,
+        "Pop_1970": 87.829,
+        "Pop_1980": 87.949,
+        "Pop_1990": 96.466,
+        "Pop_2000": 102.313,
+        "Pop_2010": 104.057,
+        "latitude": 44.5133,
+        "longitude": -88.0133,
+        "desc": "US"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.5426,
+          44.0247
+        ]
+      },
+      "properties": {
+        "name": "Oshkosh",
+        "City": "Oshkosh",
+        "Pop_1950": 41.084,
+        "Pop_1960": 45.110,
+        "Pop_1970": 53.082,
+        "Pop_1980": 49.620,
+        "Pop_1990": 55.006,
+        "Pop_2000": 62.916,
+        "Pop_2010": 66.084,
+        "latitude": 44.0247,
+        "longitude": -88.5426,
+        "desc": "US"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.4154,
+          44.2619
+        ]
+      },
+      "properties": {
+        "name": "Appleton",
+        "City": "Appleton",
+        "Pop_1950": 34.123,
+        "Pop_1960": 48.411,
+        "Pop_1970": 56.435,
+        "Pop_1980": 58.923,
+        "Pop_1990": 65.334,
+        "Pop_2000": 70.082,
+        "Pop_2010": 72.624,
+        "latitude": 44.2619,
+        "longitude": -88.4154,
+        "desc": "US"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -91.4985,
+          44.8113
+        ]
+      },
+      "properties": {
+        "name": "Eau Claire",
+        "City": "Eau Claire",
+        "Pop_1950": 36.058,
+        "Pop_1960": 37.984,
+        "Pop_1970": 44.619,
+        "Pop_1980": 51.509,
+        "Pop_1990": 56.856,
+        "Pop_2000": 61.704,
+        "Pop_2010": 65.883,
+        "latitude": 44.8113,
+        "longitude": -91.4985,
+        "desc": "US"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -91.2519,
+          43.8138
+        ]
+      },
+      "properties": {
+        "name": "La Crosse",
+        "City": "La Crosse",
+        "Pop_1950": 47.535,
+        "Pop_1960": 47.735,
+        "Pop_1970": 50.286,
+        "Pop_1980": 48.347,
+        "Pop_1990": 51.114,
+        "Pop_2000": 51.818,
+        "Pop_2010": 51.312,
+        "latitude": 43.8138,
+        "longitude": -91.2519,
+        "desc": "US"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -92.1041,
+          46.7208
+        ]
+      },
+      "properties": {
+        "name": "Superior",
+        "City": "Superior",
+        "Pop_1950": 35.325,
+        "Pop_1960": 33.562,
+        "Pop_1970": 32.327,
+        "Pop_1980": 29.453,
+        "Pop_1990": 27.145,
+        "Pop_2000": 27.368,
+        "Pop_2010": 27.244,
+        "latitude": 46.7208,
+        "longitude": -92.1041,
+        "desc": "US"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.2315,
+          43.0117
+        ]
+      },
+      "properties": {
+        "name": "Waukesha",
+        "City": "Waukesha",
+        "Pop_1950": 21.233,
+        "Pop_1960": 30.004,
+        "Pop_1970": 40.271,
+        "Pop_1980": 50.365,
+        "Pop_1990": 56.894,
+        "Pop_2000": 64.825,
+        "Pop_2010": 70.718,
+        "latitude": 43.0117,
+        "longitude": -88.2315,
+        "desc": "US"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.1065,
+          43.0606
+        ]
+      },
+      "properties": {
+        "name": "Brookfield",
+        "City": "Brookfield",
+        "Pop_1950": 0,
+        "Pop_1960": 19.812,
+        "Pop_1970": 31.035,
+        "Pop_1980": 34.035,
+        "Pop_1990": 35.184,
+        "Pop_2000": 38.649,
+        "Pop_2010": 37.920,
+        "latitude": 43.0606,
+        "longitude": -88.1065,
+        "desc": "US"
+      }
+    }
+  ]
+ }

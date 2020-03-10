@@ -1,0 +1,77 @@
+/*CSS by Jacob Hildebrand*/
+
+#map {
+    height: 700px;
+    width: 100%;
+	display: inline-block;
+	float: center;
+}
+
+#panel {
+    width: 0%;
+    padding: 20px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+
+ h1{ font-family: olifantnormal, serif;;;
+	 text-align: center;
+	 color: #Red;
+	 font-style: bold;
+ }
+
+ .leaflet-popup-content p {
+	 margin 0.2em 0;
+	 line-height: 0.75;
+	 font-family: olifantnormal, sans-serif;
+ }
+
+ .range-slider {
+	 width: 60%;
+ }
+
+#forward {
+	float: right;
+}
+
+#reverse {
+	float: left;
+}
+
+.sequence-control-container {
+    width: 325px;
+    height: 25px;
+    background-color: rgba(255,255,255,0.8);
+    padding: 10px;
+    line-height: 45px;
+    text-align: center;
+    border: light gray 1px;
+}
+
+.legend-control-container {
+	font-family: olifantnormal, serif;
+	text-align: center;
+	font-size:12px;
+	width: 180px;
+	height: 90px;
+	background-color: rgba(255,255,255,0.8);
+	padding: 10px;
+}
+
+#content {
+	font-family: olifantnormal, sans-serif;
+	width: 100%;
+	float: center;;
+	padding-left: 50px;
+	line-height: 1.5;
+	text-align: justify;
+}
+
+#footer {
+	font-family: olifantnormal, sans-serif;
+	font-size: 20px;
+	position: absolute;
+	bottom: 10;
+	right: 50px;
+}
