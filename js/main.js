@@ -22,8 +22,8 @@ function createMap(){
 
 //Step 4. Calculate proportional symbol radii
 function calcPropRadius(attValue) {
-	var scaleFactor = 5;
-	var area = attValue * scaleFactor;
+	var minRadius = 5;
+	var area = attValue * minRadius;
 	var radius = Math.sqrt(area/Math.PI)*1.5;
 
 	return radius;
@@ -98,6 +98,8 @@ function createSequenceControls(map, attributes){
 
 	map.addControl(new sequenceControl());
 
+	//have sequence only sequence on the population attrubtes
+
 	$('.range-slider').attr({
 		max: 7,
 		min: 1,
@@ -125,7 +127,7 @@ function createSequenceControls(map, attributes){
 	});
 };
 
-//Update prop symbols based on sequence operator
+//Update prop symbols based on users movement of sequence operator
 function updatePropSymbols(map, attribute){
 
 	map.eachLayer(function(layer){
@@ -135,10 +137,11 @@ function updatePropSymbols(map, attribute){
 			var radius = calcPropRadius(props[attribute]);
 			layer.setRadius(radius);
 
+// set popupContent to population at time sequence operator is at
 			var popupContent = "<p><b>City: </b>" + props.City + "</p>"
 
 			var year = attribute.split("_")[1];
-
+//html key of popup
 			popupContent += "<p><b>Population in (thousands) " + attribute + ": </b> " + props[attribute] + "</p>";
 
 			layer.bindPopup(popupContent, {
@@ -177,13 +180,13 @@ function getData(map){
             //call function to create proportional symbols
 			createPropSymbols(response, map, attributes);
 			createSequenceControls(map, attributes);
-			createLegend(map, attributes);
+			newLegend(map, attributes);
         }
     });
 };
 
 // Create legend and legend container
-function createLegend(map, attributes, attribute, properties){
+function newLegend(map, attributes, attribute, properties){
 	var LegendControl = L.Control.extend({
 		options: {
 			position: 'bottomright'
@@ -193,11 +196,11 @@ function createLegend(map, attributes, attribute, properties){
 
 			$(container).append('<div id="temporal-legend">')
 			var svg = '<svg id="attribute-legend" width="200px" height="260px">';
-
+//circle size based on max, min, mean
 			var circles = {
-				max: 10,
+				max: 40,
 				mean: 20,
-				min: 40
+				min: 10
 			};
 
 			//Create dynamic legend
@@ -254,6 +257,7 @@ function newLegendupdate(map, attribute){
 // creating temportal legend for citypop
 	$('#temporal-legend').html(content);
 
+//adding updated circleValues to map
 	var circleValues = getCircleValues(map, attribute);
 		for (var key in circleValues){
 			var radius = calcPropRadius(circleValues[key]);
@@ -294,7 +298,7 @@ function createOverlay(map){
 
 
 
-
+// define overlays to importantLandmarks and add to map
 	var overlays = {
 		"Important Landmarks": importantLandmarks
 	};
